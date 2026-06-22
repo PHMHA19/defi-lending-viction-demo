@@ -1,0 +1,157 @@
+{
+  "address": "0x308007a07d15a29c180b6ec1778ce71cfd1356ce",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "initialAnswer",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "int256",
+          "name": "current",
+          "type": "int256"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "roundId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "updatedAt",
+          "type": "uint256"
+        }
+      ],
+      "name": "AnswerUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTokenType",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "latestAnswer",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "newAnswer",
+          "type": "int256"
+        }
+      ],
+      "name": "setLatestAnswer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "contractName": "MockAggregator",
+  "sourceName": "contracts/mocks/oracle/CLAggregators/MockAggregator.sol",
+  "bytecode": "0x608060405234801561000f575f80fd5b5060405161019c38038061019c83398101604081905261002e9161006d565b5f81815560405142815282907f0559884fd3a460db3073b7fc896cc77986f16e378210ded43186175bf646fc5f9060200160405180910390a350610084565b5f6020828403121561007d575f80fd5b5051919050565b61010b806100915f395ff3fe6080604052348015600e575f80fd5b50600436106044575f3560e01c806304ea97b0146048578063313ce56714605957806350d25bcd14606d578063fcab181914607d575b5f80fd5b6057605336600460bf565b6083565b005b604051600881526020015b60405180910390f35b5f545b6040519081526020016064565b60016070565b5f81815560405142815282907f0559884fd3a460db3073b7fc896cc77986f16e378210ded43186175bf646fc5f9060200160405180910390a350565b5f6020828403121560ce575f80fd5b503591905056fea26469706673582212207edfd521edeeef9b40efb3ed37240a62ff0c0e95addfc639baf6bc336f8d447564736f6c63430008140033",
+  "deployedBytecode": "0x6080604052348015600e575f80fd5b50600436106044575f3560e01c806304ea97b0146048578063313ce56714605957806350d25bcd14606d578063fcab181914607d575b5f80fd5b6057605336600460bf565b6083565b005b604051600881526020015b60405180910390f35b5f545b6040519081526020016064565b60016070565b5f81815560405142815282907f0559884fd3a460db3073b7fc896cc77986f16e378210ded43186175bf646fc5f9060200160405180910390a350565b5f6020828403121560ce575f80fd5b503591905056fea26469706673582212207edfd521edeeef9b40efb3ed37240a62ff0c0e95addfc639baf6bc336f8d447564736f6c63430008140033",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {},
+  "inputSourceName": "project/contracts/mocks/oracle/CLAggregators/MockAggregator.sol",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "evm": {
+    "gasEstimates": {
+      "creation": {
+        "codeDepositCost": "53400",
+        "executionCost": "infinite",
+        "totalCost": "infinite"
+      },
+      "external": {
+        "decimals()": "165",
+        "getTokenType()": "235",
+        "latestAnswer()": "2301",
+        "setLatestAnswer(int256)": "24119"
+      }
+    }
+  },
+  "metadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"initialAnswer\",\"type\":\"int256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"int256\",\"name\":\"current\",\"type\":\"int256\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"roundId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"updatedAt\",\"type\":\"uint256\"}],\"name\":\"AnswerUpdated\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTokenType\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"latestAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"newAnswer\",\"type\":\"int256\"}],\"name\":\"setLatestAnswer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project/contracts/mocks/oracle/CLAggregators/MockAggregator.sol\":\"MockAggregator\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\"project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.6.1/\"]},\"sources\":{\"project/contracts/mocks/oracle/CLAggregators/MockAggregator.sol\":{\"content\":\"// SPDX-License-Identifier: BUSL-1.1\\npragma solidity ^0.8.0;\\n\\ncontract MockAggregator {\\n    int256 private _latestAnswer;\\n\\n    event AnswerUpdated(\\n        int256 indexed current,\\n        uint256 indexed roundId,\\n        uint256 updatedAt\\n    );\\n\\n    constructor(\\n        int256 initialAnswer\\n    ) {\\n        _latestAnswer =\\n            initialAnswer;\\n\\n        emit AnswerUpdated(\\n            initialAnswer,\\n            0,\\n            block.timestamp\\n        );\\n    }\\n\\n    function latestAnswer()\\n        external\\n        view\\n        returns (int256)\\n    {\\n        return _latestAnswer;\\n    }\\n\\n    function setLatestAnswer(\\n        int256 newAnswer\\n    ) external {\\n        _latestAnswer =\\n            newAnswer;\\n\\n        emit AnswerUpdated(\\n            newAnswer,\\n            0,\\n            block.timestamp\\n        );\\n    }\\n\\n    function getTokenType()\\n        external\\n        pure\\n        returns (uint256)\\n    {\\n        return 1;\\n    }\\n\\n    function decimals()\\n        external\\n        pure\\n        returns (uint8)\\n    {\\n        return 8;\\n    }\\n}\",\"keccak256\":\"0x354b7a7b46ac5251f2ef6cee0fa6a4efac8cf5b608f6d6f238a7b64d4c0a3b4c\",\"license\":\"BUSL-1.1\"}},\"version\":1}",
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 13217,
+        "contract": "project/contracts/mocks/oracle/CLAggregators/MockAggregator.sol:MockAggregator",
+        "label": "_latestAnswer",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_int256"
+      }
+    ],
+    "types": {
+      "t_int256": {
+        "encoding": "inplace",
+        "label": "int256",
+        "numberOfBytes": "32"
+      }
+    }
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "argsData": "0x0000000000000000000000000000000000000000000000000000002e90edd000",
+  "transaction": {
+    "hash": "0x6c3c571cebdd271f5a3e2fe767b55e09fed5ed59c5a74b360a720ebb9b225875",
+    "nonce": "0x1ca",
+    "origin": "0xe55d6fbfd2da1562187bbc5b874a070a490f410b"
+  },
+  "receipt": {
+    "blockHash": "0xdead131859dc833ef33c54e834d966febb1431800ebc055a818998f67e2b8d37",
+    "blockNumber": "0xa99324",
+    "transactionIndex": "0x55"
+  }
+}
