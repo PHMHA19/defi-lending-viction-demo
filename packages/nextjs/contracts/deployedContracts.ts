@@ -7,7 +7,7 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   11155111: {
     AaveOracle: {
-      address: "0xac70589d20a1c2d3e03d2ba8cd04027d2f6204cc",
+      address: "0xdd6b56fbdd9de72a1a9ca85e8e2002d857807f5b",
       abi: [
         {
           inputs: [
@@ -248,10 +248,10 @@ const deployedContracts = {
         setAssetSources: "project/contracts/interfaces/IAaveOracle.sol",
         setFallbackOracle: "project/contracts/interfaces/IAaveOracle.sol",
       },
-      deployedOnBlock: 11113253,
+      deployedOnBlock: 11126681,
     },
     AaveProtocolDataProvider: {
-      address: "0x32f2657841cbf11d48fa00fb942e82d1449e5e9b",
+      address: "0x46e46d2025e5b419bc09b9c4d61499a81b0b3faf",
       abi: [
         {
           inputs: [
@@ -820,10 +820,10 @@ const deployedContracts = {
         getUserReserveData:
           "project/contracts/interfaces/IPoolDataProvider.sol",
       },
-      deployedOnBlock: 11113245,
+      deployedOnBlock: 11126672,
     },
     ACLManager: {
-      address: "0xdf678fbd8078fb167b8ce63f1f44a900e2bbf3a5",
+      address: "0xc785c7d10b3b235eab6d37a6c4b2ac8affc2a516",
       abi: [
         {
           inputs: [
@@ -1463,10 +1463,10 @@ const deployedContracts = {
         removeRiskAdmin: "project/contracts/interfaces/IACLManager.sol",
         setRoleAdmin: "project/contracts/interfaces/IACLManager.sol",
       },
-      deployedOnBlock: 11113216,
+      deployedOnBlock: 11126647,
     },
     ATokenImpl: {
-      address: "0x3f94b479a0115bd5988a566d22a08d457ba82aa6",
+      address: "0x8484894a249e6bf14e26f19a1c86245cce4c8f62",
       abi: [
         {
           inputs: [
@@ -2380,10 +2380,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113239,
+      deployedOnBlock: 11126666,
     },
     BorrowLogic: {
-      address: "0x1fced91b6098317ec0e2ef601a0e82641db84650",
+      address: "0xf2a1408e082e4c2bf93e96a7184a8f713c768acf",
       abi: [
         {
           anonymous: false,
@@ -2598,10 +2598,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113223,
+      deployedOnBlock: 11126650,
     },
     BridgeLogic: {
-      address: "0x644898db8c4341bd8679ce73904f9d68d0be7438",
+      address: "0x2df2bf4c63cff91aaa7bf564cb4f813b0a191616",
       abi: [
         {
           anonymous: false,
@@ -2735,10 +2735,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113227,
+      deployedOnBlock: 11126654,
     },
     ConfiguratorLogic: {
-      address: "0x2991c677d31df8e8eae3ee48e620ccd6bb7d2afa",
+      address: "0xdc2abc0f814cd6f785b1f0ce52e3e86917266fa7",
       abi: [
         {
           anonymous: false,
@@ -2854,10 +2854,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113234,
+      deployedOnBlock: 11126661,
     },
     DefaultReserveInterestRateStrategy: {
-      address: "0x338fa24bd76049f3035f74a2661ac05d4820df8c",
+      address: "0x9880e16e0204a501ccbb08934f82462be8ba9f65",
       abi: [
         {
           inputs: [
@@ -3162,10 +3162,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113238,
+      deployedOnBlock: 11126665,
     },
     EModeLogic: {
-      address: "0x48698eb2db66e6251c6fae56de8709a3288a253f",
+      address: "0xd2e7e76f4de4153c2a2a1b6cb00204c61530cac8",
       abi: [
         {
           anonymous: false,
@@ -3188,10 +3188,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113228,
+      deployedOnBlock: 11126655,
     },
     FlashLoanLogic: {
-      address: "0xeba828547fc759ed9afdf6d368b683e34ceb0277",
+      address: "0x40b1e96bb33b2ec40f4b179487f73b2fc47e4fe7",
       abi: [
         {
           anonymous: false,
@@ -3287,10 +3287,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113226,
+      deployedOnBlock: 11126653,
     },
     LiquidationLogic: {
-      address: "0x33e034c9b1e945ba81ac1e2ff8a4f7278c210662",
+      address: "0x4dbaa5aaf7a48b3394c320ad0218d08e74870250",
       abi: [
         {
           anonymous: false,
@@ -3469,10 +3469,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113225,
+      deployedOnBlock: 11126652,
     },
     MockAggregatorETH: {
-      address: "0x308007a07d15a29c180b6ec1778ce71cfd1356ce",
+      address: "0x4835e47eab4f2c567a28e68190bd41b09b739a5d",
       abi: [
         {
           inputs: [
@@ -3564,10 +3564,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113252,
+      deployedOnBlock: 11126680,
     },
     MockAggregatorUSDC: {
-      address: "0xea32674796b527d2ae7f9f9d38c4b4de63b3ddfe",
+      address: "0x95bc50f0087c1cea1576d1e2e1554ea28e1b2767",
       abi: [
         {
           inputs: [
@@ -3659,10 +3659,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113251,
+      deployedOnBlock: 11126679,
     },
     MockUSDC: {
-      address: "0x5e39c02496fa6d486155c8569b22a1628fcbd27a",
+      address: "0x8f5d0c1656da3323b2e14d137db80662d5788ce3",
       abi: [
         {
           inputs: [
@@ -4101,10 +4101,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113237,
+      deployedOnBlock: 11126664,
     },
     MockWETH: {
-      address: "0x490f6cc6108eaea67b0a84c8a48b4df1bd13c78a",
+      address: "0xea6b8072881cd989cda28425710520f5d0d36a4d",
       abi: [
         {
           anonymous: false,
@@ -4435,10 +4435,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113247,
+      deployedOnBlock: 11126674,
     },
     PoolAddressesProvider: {
-      address: "0x2c692169229c5f69071ca557a6fcf4817c758ead",
+      address: "0x6c782ca9ba7d0afe38cfd8a26fa940de0501a89a",
       abi: [
         {
           inputs: [
@@ -5043,10 +5043,10 @@ const deployedContracts = {
         setPriceOracleSentinel:
           "project/contracts/interfaces/IPoolAddressesProvider.sol",
       },
-      deployedOnBlock: 11113162,
+      deployedOnBlock: 11126645,
     },
     PoolConfiguratorImpl: {
-      address: "0x27e5af6c6cd9432f82f8f671cb4d1c39554edd87",
+      address: "0x3eb92989d2e8c0a9a33daa16b001813d96dd4301",
       abi: [
         {
           anonymous: false,
@@ -6341,10 +6341,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113235,
+      deployedOnBlock: 11126662,
     },
     PoolImpl: {
-      address: "0xa4bf05a5979948e4aa775ad2619aa7ee52c247dd",
+      address: "0x0cba8d694d2bc1bbac6d24c8932b7df5a8ddd679",
       abi: [
         {
           inputs: [
@@ -8067,10 +8067,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113230,
+      deployedOnBlock: 11126657,
     },
     PoolLogic: {
-      address: "0xb0152b04c5a4e56df57f31965c743003b3316424",
+      address: "0xdfa2e2262b785a63cd9fdde94fea5d4f5197e1c2",
       abi: [
         {
           anonymous: false,
@@ -8112,10 +8112,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113229,
+      deployedOnBlock: 11126656,
     },
     ReserveLogic: {
-      address: "0x2d60bc7847afe6bd76c66a703a83cb4972b4a7fb",
+      address: "0x86be56fbf7de79c4c91ffd09760204640f6e3806",
       abi: [
         {
           anonymous: false,
@@ -8162,10 +8162,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113224,
+      deployedOnBlock: 11126651,
     },
     StableDebtTokenImpl: {
-      address: "0xe653082a3f60c00212f4fe6a8d42ccae7e0063d4",
+      address: "0x305b247e749ab3a0004b33e718079111652ecb09",
       abi: [
         {
           inputs: [
@@ -9081,10 +9081,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113240,
+      deployedOnBlock: 11126667,
     },
     SupplyLogic: {
-      address: "0x63e2d27a81b625833698df4a4b766087c437ecfe",
+      address: "0xa0db40b3d82659656b68de145e68dde5ac86406b",
       abi: [
         {
           anonymous: false,
@@ -9237,10 +9237,10 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113222,
+      deployedOnBlock: 11126649,
     },
     VariableDebtTokenImpl: {
-      address: "0x169522fc20889a6df33cd577bacc30ef4672bc9a",
+      address: "0x895b21d58a79fd6824cf7982345f35129d6f76ba",
       abi: [
         {
           inputs: [
@@ -10073,7 +10073,7 @@ const deployedContracts = {
         },
       ],
       inheritedFunctions: {},
-      deployedOnBlock: 11113241,
+      deployedOnBlock: 11126668,
     },
   },
 } as const;

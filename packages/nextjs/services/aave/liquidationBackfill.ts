@@ -1,7 +1,7 @@
-import { getPublicClient } from "@wagmi/core";
 import { getAddress, type Address } from "viem";
+import { createPublicClient, http } from "viem";
+import { mainnet, sepolia } from "viem/chains";
 import deployedContracts from "~~/contracts/deployedContracts";
-import { wagmiConfig } from "~~/services/web3/wagmiConfig";
 import { getPoolAddress } from "~~/services/aave/provider";
 import { poolEventsAbi } from "./poolEventsAbi";
 import { getSupabaseAdminClient } from "../supabase/server";
@@ -63,11 +63,12 @@ async function saveLastScannedBlock(chainId: number, blockNumber: bigint) {
 
   const { error } = await supabase.from(SYNC_STATE_TABLE).upsert(
     {
+      id: "aave_liquidation",
       chain_id: chainId,
       last_scanned_block: blockNumber.toString(),
       updated_at: new Date().toISOString(),
     },
-    { onConflict: "chain_id" },
+    { onConflict: "id,chain_id" },
   );
 
   if (error) {
@@ -85,9 +86,12 @@ function resolveSupportedChainId(
     const resolvedChainId = resolveChainId(chainId);
     const supportedChainId = resolveSupportedChainId(resolvedChainId);
 
-    const publicClient = getPublicClient(wagmiConfig, {
-        chainId: supportedChainId,
-    });
+    const chain = supportedChainId === 1 ? mainnet : sepolia;
+
+const publicClient = createPublicClient({
+  chain,
+  transport: http(),
+});
 
     const poolAddress = (await getPoolAddress()) as Address;
   const lastScannedBlock = await getLastScannedBlock(resolvedChainId);

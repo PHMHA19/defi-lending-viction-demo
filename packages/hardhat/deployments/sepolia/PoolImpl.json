@@ -1,5 +1,5 @@
 {
-  "address": "0xa4bf05a5979948e4aa775ad2619aa7ee52c247dd",
+  "address": "0x0cba8d694d2bc1bbac6d24c8932b7df5a8ddd679",
   "abi": [
     {
       "inputs": [
@@ -3160,25 +3160,25 @@
     "notice": "Main point of interaction with an Aave protocol's market - Users can:   # Supply   # Withdraw   # Borrow   # Repay   # Swap their loans between variable and stable rate   # Enable/disable their supplied assets as collateral rebalance stable rate borrow positions   # Liquidate positions   # Execute Flash Loans",
     "version": 1
   },
-  "argsData": "0x0000000000000000000000002c692169229c5f69071ca557a6fcf4817c758ead",
+  "argsData": "0x0000000000000000000000006c782ca9ba7d0afe38cfd8a26fa940de0501a89a",
   "libraries": {
-    "ReserveLogic": "0x2d60bc7847afe6bd76c66a703a83cb4972b4a7fb",
-    "BorrowLogic": "0x1fced91b6098317ec0e2ef601a0e82641db84650",
-    "BridgeLogic": "0x644898db8c4341bd8679ce73904f9d68d0be7438",
-    "EModeLogic": "0x48698eb2db66e6251c6fae56de8709a3288a253f",
-    "FlashLoanLogic": "0xeba828547fc759ed9afdf6d368b683e34ceb0277",
-    "LiquidationLogic": "0x33e034c9b1e945ba81ac1e2ff8a4f7278c210662",
-    "PoolLogic": "0xb0152b04c5a4e56df57f31965c743003b3316424",
-    "SupplyLogic": "0x63e2d27a81b625833698df4a4b766087c437ecfe"
+    "ReserveLogic": "0x86be56fbf7de79c4c91ffd09760204640f6e3806",
+    "BorrowLogic": "0xf2a1408e082e4c2bf93e96a7184a8f713c768acf",
+    "BridgeLogic": "0x2df2bf4c63cff91aaa7bf564cb4f813b0a191616",
+    "EModeLogic": "0xd2e7e76f4de4153c2a2a1b6cb00204c61530cac8",
+    "FlashLoanLogic": "0x40b1e96bb33b2ec40f4b179487f73b2fc47e4fe7",
+    "LiquidationLogic": "0x4dbaa5aaf7a48b3394c320ad0218d08e74870250",
+    "PoolLogic": "0xdfa2e2262b785a63cd9fdde94fea5d4f5197e1c2",
+    "SupplyLogic": "0xa0db40b3d82659656b68de145e68dde5ac86406b"
   },
   "transaction": {
-    "hash": "0x03d6551c06e3af52921c866f3943f82041a6ab9c1caffbf00136db0047a87743",
-    "nonce": "0x1b4",
+    "hash": "0x5ff5bc237b0a845623faeb20c166798c41fe539c7534f794e42b01422f347b59",
+    "nonce": "0x1e5",
     "origin": "0xe55d6fbfd2da1562187bbc5b874a070a490f410b"
   },
   "receipt": {
-    "blockHash": "0xd747f07e4300b17f4b10b2fc15c525bf5d0b53018b01e9f9922d19d80ab6899e",
-    "blockNumber": "0xa9930e",
-    "transactionIndex": "0xd3"
+    "blockHash": "0x14feecd3f623e07cd943cc569d7c2dc632571bbbcf913dcc24eb898944e404f6",
+    "blockNumber": "0xa9c781",
+    "transactionIndex": "0x7d"
   }
 }
