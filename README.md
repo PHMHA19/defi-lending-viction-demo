@@ -36,7 +36,7 @@
 ```bash
 git clone https://github.com/PHMHA19/defi-lending-demo.git
 
-cd defi-lending-aave-main
+cd defi-lending-demo-main
 
 yarn install
 
@@ -210,7 +210,7 @@ git clone https://github.com/PHMHA19/defi-lending-demo.git
 Di chuyển vào thư mục dự án:
 
 ```bash
-cd defi-lending-aave-main
+cd defi-lending-demo-main
 ```
 
 ---
@@ -311,7 +311,7 @@ yarn hardhat compile
 # Cấu trúc thư mục
 
 ```
-defi-lending-aave
+defi-lending-demo-main
 │
 ├── packages
 │   │
