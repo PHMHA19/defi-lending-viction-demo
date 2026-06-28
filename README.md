@@ -116,7 +116,7 @@ npm install -g yarn
 # Clone dự án
 
 ```bash
-git clone https://github.com/PHMHA19/defi-lending-viction-demo.git
+git clone https://github.com/PHMHA19/defi-lending-demo.git
 ```
 
 Di chuyển vào thư mục dự án:
@@ -358,6 +358,6 @@ Sau đó có thể compile và deploy bằng Hardhat.
 **PHMHA19**
 
 - **GitHub:** https://github.com/PHMHA19
-- **Repository:** https://github.com/PHMHA19/defi-lending-viction-demo
+- **Repository:** https://github.com/PHMHA19/defi-lending-demo
 
 > Nếu cần file **`.env.local`** để chạy đầy đủ Frontend, vui lòng liên hệ tác giả qua GitHub.
