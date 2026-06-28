@@ -1,40 +1,163 @@
 # DeFi Lending Protocol (Aave Fork)
 
-> **GitHub Repository:** https://github.com/PHMHA19/defi-lending-aave
+> **GitHub Repository:** https://github.com/PHMHA19/defi-lending-demo
+
+## Mục lục
+
+* [Giới thiệu](#giới-thiệu)
+* [Tính năng](#tính-năng)
+* [Kiến trúc hệ thống](#kiến-trúc-hệ-thống)
+* [Công nghệ sử dụng](#công-nghệ-sử-dụng)
+* [Môi trường phát triển](#môi-trường-phát-triển)
+* [Yêu cầu trước khi chạy](#yêu-cầu-trước-khi-chạy)
+* [Clone dự án](#clone-dự-án)
+* [Cài đặt thư viện](#cài-đặt-thư-viện)
+* [Chạy Frontend](#chạy-frontend)
+* [Kết nối MetaMask](#kết-nối-metamask)
+* [Smart Contract](#smart-contract)
+* [Phát triển Smart Contract](#nếu-muốn-phát-triển-smart-contract)
+* [Cấu trúc thư mục](#cấu-trúc-thư-mục)
+* [Các lệnh thường dùng](#các-lệnh-thường-dùng)
+* [Lỗi thường gặp](#lỗi-thường-gặp)
+* [Tự deploy Smart Contract](#tự-deploy-smart-contract)
+* [Tác giả](#tác-giả)
+* [Giấy phép](#giấy-phép)
+
+---
 
 ## Giới thiệu
 
 Đây là dự án xây dựng một giao thức **DeFi Lending Protocol** lấy cảm hứng từ **Aave Protocol**, được phát triển trên mạng **Ethereum Sepolia Testnet**.
 
-Người dùng có thể:
+---
 
-* Kết nối ví MetaMask
-* Deposit tài sản
-* Borrow tài sản
-* Repay khoản vay
-* Withdraw tài sản
-* Theo dõi trạng thái tài sản trên blockchain
+## Quick Start
 
-Dự án bao gồm:
+```bash
+git clone https://github.com/PHMHA19/defi-lending-demo.git
 
-* Smart Contract (Solidity + Hardhat)
-* Frontend (NextJS + React)
-* Kết nối blockchain thông qua MetaMask
+cd defi-lending-demo
+
+yarn install
+
+cd packages/nextjs
+
+yarn start
+```
+
+Sau đó truy cập:
+
+```
+http://localhost:3000
+```
+---
+
+# Tính năng
+
+Dự án hiện hỗ trợ các chức năng chính sau:
+
+* ✅ Kết nối ví MetaMask
+* ✅ Hỗ trợ mạng Ethereum Sepolia Testnet
+* ✅ Deposit (cung cấp tài sản)
+* ✅ Borrow (vay tài sản)
+* ✅ Repay (hoàn trả khoản vay)
+* ✅ Withdraw (rút tài sản)
+* ✅ Approve ERC20 Token
+* ✅ Theo dõi tài sản đang gửi
+* ✅ Theo dõi khoản vay hiện tại
+* ✅ Hiển thị thông tin tài khoản từ Smart Contract
+* ✅ Tương tác trực tiếp với Smart Contract thông qua MetaMask
 
 ---
 
+# Kiến trúc hệ thống
+
+Hệ thống được xây dựng theo mô hình sau:
+
+```text
++-------------+
+|    User     |
++-------------+
+       │
+       ▼
++--------------------+
+|      MetaMask      |
++--------------------+
+       │
+       ▼
++--------------------+
+| Frontend (Next.js) |
+| React + Wagmi      |
++--------------------+
+       │
+       ▼
++--------------------+
+| Ethereum Sepolia   |
++--------------------+
+       │
+       ▼
++--------------------+
+| Smart Contracts    |
+| (Aave Fork)        |
++--------------------+
+```
+
+Frontend chịu trách nhiệm hiển thị giao diện và gửi yêu cầu giao dịch.
+
+MetaMask thực hiện ký giao dịch.
+
+Các Smart Contract xử lý toàn bộ nghiệp vụ vay, cho vay và quản lý tài sản trên blockchain.
+
+---
+
+# Công nghệ sử dụng
+
+| Thành phần           | Công nghệ                |
+| -------------------- | ------------------------ |
+| Frontend             | Next.js                  |
+| UI                   | React                    |
+| Smart Contract       | Solidity                 |
+| Blockchain Framework | Hardhat                  |
+| Blockchain Network   | Ethereum Sepolia Testnet |
+| Wallet               | MetaMask                 |
+| Web3 Library         | Wagmi                    |
+| Package Manager      | Yarn                     |
+| Version Control      | Git                      |
+
+---
+
+# Quy trình hoạt động
+
+Quá trình sử dụng hệ thống diễn ra theo các bước sau:
+
+1. Người dùng kết nối ví MetaMask.
+2. Frontend lấy thông tin tài khoản và tài sản từ blockchain.
+3. Người dùng lựa chọn Deposit, Borrow, Repay hoặc Withdraw.
+4. MetaMask hiển thị cửa sổ xác nhận giao dịch.
+5. Giao dịch được gửi lên Ethereum Sepolia.
+6. Smart Contract xử lý giao dịch.
+7. Frontend cập nhật dữ liệu mới sau khi giao dịch thành công.
+
+---
+
+
 # Môi trường phát triển
 
-| Thành phần       | Phiên bản                |
-| ---------------- | ------------------------ |
-| Operating System | Windows 11 64-bit        |
-| Node.js          | v22.22.3                 |
-| npm              | 10.9.8                   |
-| Yarn             | 4.13.0                   |
-| Git              | 2.51.0.windows.2         |
-| Hardhat          | 3.5.1                    |
-| Blockchain       | Ethereum Sepolia Testnet |
-| Wallet           | MetaMask                 |
+| Công cụ | Phiên bản | Kiểm tra |
+|---------|-----------|----------|
+| Node.js | v22.22.3 | `node -v` |
+| npm | 10.9.8 | `npm -v` |
+| Yarn | 4.13.0 | `yarn -v` |
+| Git | 2.51.0.windows.2 | `git --version` |
+| Hardhat | 3.5.1 | `yarn hardhat --version` |
+| Blockchain | Ethereum Sepolia Testnet | - |
+| Wallet | MetaMask | - |
+
+> Nếu chưa cài Yarn:
+
+```bash
+npm install -g yarn
+```
 
 ---
 
@@ -49,70 +172,6 @@ Cài đặt các phần mềm sau:
 
 ---
 
-# Kiểm tra môi trường
-
-## Kiểm tra Node.js
-
-```bash
-node -v
-```
-
-Kết quả mong muốn:
-
-```bash
-v22.22.3
-```
-
----
-
-## Kiểm tra npm
-
-```bash
-npm -v
-```
-
-Kết quả:
-
-```bash
-10.9.8
-```
-
----
-
-## Kiểm tra Git
-
-```bash
-git --version
-```
-
-Kết quả:
-
-```bash
-git version 2.51.0.windows.2
-```
-
----
-
-## Kiểm tra Yarn
-
-```bash
-yarn -v
-```
-
-Kết quả:
-
-```bash
-4.13.0
-```
-
-Nếu chưa cài Yarn:
-
-```bash
-npm install -g yarn
-```
-
----
-
 # Clone dự án
 
 ```bash
@@ -122,7 +181,7 @@ git clone https://github.com/PHMHA19/defi-lending-demo.git
 Di chuyển vào thư mục dự án:
 
 ```bash
-cd defi-lending-aave
+cd defi-lending-aave-main
 ```
 
 ---
