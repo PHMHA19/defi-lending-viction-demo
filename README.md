@@ -322,7 +322,7 @@ Ethereum Sepolia
 
 ## Không có ETH Sepolia
 
-Người dùng cần nhận ETH testnet từ Faucet trước khi thực hiện giao dịch.
+Người dùng cần nhận ETH testnet từ Faucet tại https://sepolia-faucet.pk910.de/ trước khi thực hiện giao dịch.
 
 ---
 
