@@ -116,7 +116,7 @@ npm install -g yarn
 # Clone dự án
 
 ```bash
-git clone https://github.com/PHMHA19/defi-lending-aave.git
+git clone https://github.com/PHMHA19/defi-lending-viction-demo.git
 ```
 
 Di chuyển vào thư mục dự án:
@@ -147,10 +147,13 @@ Di chuyển tới thư mục frontend:
 cd packages/nextjs
 ```
 
+> **Lưu ý:** Để chạy đầy đủ giao diện, cần file `packages/nextjs/.env.local`.  
+> File này không được đưa lên GitHub vì lý do bảo mật. Vui lòng liên hệ tác giả để nhận file cấu hình trước khi chạy dự án.
+
 Khởi động ứng dụng:
 
 ```bash
-yarn dev
+yarn start
 ```
 
 Sau khi chạy thành công, mở trình duyệt tại:
@@ -336,6 +339,7 @@ Người dùng cần nhận ETH testnet từ Faucet trước khi thực hiện g
 
 **PHMHA19**
 
-GitHub Repository:
+- **GitHub:** https://github.com/PHMHA19
+- **Repository:** https://github.com/PHMHA19/defi-lending-viction-demo
 
-https://github.com/PHMHA19/defi-lending-aave
+> Nếu cần file **`.env.local`** để chạy đầy đủ Frontend, vui lòng liên hệ tác giả qua GitHub.
