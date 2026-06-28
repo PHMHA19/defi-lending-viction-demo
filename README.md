@@ -1,8 +1,10 @@
 # DeFi Lending Protocol (Aave Fork)
 
-Giới thiệu
+> **GitHub Repository:** https://github.com/PHMHA19/defi-lending-aave
 
-Đây là dự án xây dựng một giao thức DeFi Lending Protocol lấy cảm hứng từ Aave Protocol, được phát triển trên mạng Ethereum Sepolia Testnet.
+## Giới thiệu
+
+Đây là dự án xây dựng một giao thức **DeFi Lending Protocol** lấy cảm hứng từ **Aave Protocol**, được phát triển trên mạng **Ethereum Sepolia Testnet**.
 
 Người dùng có thể:
 
@@ -51,7 +53,9 @@ Cài đặt các phần mềm sau:
 
 ## Kiểm tra Node.js
 
+```bash
 node -v
+```
 
 Kết quả mong muốn:
 
@@ -254,7 +258,7 @@ yarn install
 ```bash
 cd packages/nextjs
 
-yarn start
+yarn dev
 ```
 
 ### Compile Smart Contract
